@@ -1,0 +1,71 @@
+.footer {
+    background: #0C2E5E;
+
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footerRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footerColumn {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    margin: 10px;
+}
+.footerColumn>h1{
+    font-size: 24px;
+    font-family:Paris2024-Variable
+    ;
+}
+
+.footerColumn ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerColumn ul li {
+    margin: 10px 0;
+}
+
+.footerColumn ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerColumn ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footerColumn {
+        max-width: 100%;
+    }
+}
+
+
+.IconImage{
+display: flex;
+gap: 25px;
+margin-left: 10%;
+margin-top: 10%;
+}
+.logo24{
+    width:201px;
+    height:160px;
+    margin-left: 10%;
+}
+.footerDownloadApp{
+    margin-top: 10%;
+    margin-right: 12%;
+}
+
+.appstore img{
+    width:100px;
+    margin-top:5%
+}

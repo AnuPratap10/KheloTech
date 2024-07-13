@@ -1,0 +1,25 @@
+/* .fllowMainContainer{
+
+  background-color: antiquewhite;
+} */
+
+.followFirstBox {
+    display: flex;
+    /* border:1px solid rgb(224, 211, 211); */
+  }
+  
+  .followImage {
+    margin-left: 14%;
+  }
+  
+  .followIcon {
+    display: flex;
+    gap: 25px;
+    margin-top: 25%;
+  }
+  
+  .followSecDiv {
+    margin-left: 10%;
+    margin-top: 15%;
+  }
+  

@@ -1,0 +1,48 @@
+
+.zoneMainContainer {
+    display: flex;
+    /* border:1px solid red; */
+  }
+  
+  .zoneH1{
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  .zoneImage{
+  
+    margin-left: 10%;
+    margin-top: 10%;
+   
+  }
+  
+  .zoneMaps{
+    margin-left: 25%;
+  }
+  
+  .zoneH1Sec{
+    padding: 1px;
+  }
+  
+  .zoneH1Sec+p{
+    padding: 5px;
+  } 
+  
+  .zoneColor{
+    width:500px;
+    height:200px;
+    padding: 3px;
+    /* border:1px solid blue; */
+    margin-left: 10%;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #FFDF8C 65.49%, #FFFFFF 109.41%);
+  
+  }
+  .zoneExplore{
+    margin-left: 10%;
+  }
+  .zoneExplore>button{
+    border-radius: 10px;
+    padding: 7px;
+  border: none;
+  width:100px;
+  }
