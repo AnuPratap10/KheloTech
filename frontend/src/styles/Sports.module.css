@@ -2,7 +2,15 @@
 .sportsFirstContainer {
     display: flex;
     justify-content: space-between;
+    color: var(--prima, #81378F);
+
    
+  }
+  .margin80 {
+ 
+    margin-left: 10%;
+    margin-right: 10%;
+    height: fit-content;
   }
   .sportButton {
     height: 35px;
@@ -59,4 +67,21 @@
   .followSecDiv {
     margin-left: 10%;
     margin-top: 15%;
+  }
+
+  @media (max-width: 768px) {
+    .sportsFirstContainer {
+      flex-direction: column; /* Stack heading and button */
+      align-items: center; /* Center align items */
+      text-align: center; /* Center text */
+    }
+  
+    .sportButton {
+      width: 80%; /* Full width button on smaller screens */
+    }
+  
+    .sportDivBox1 > div {
+      width: 100px; /* Adjust width for smaller screens */
+      height: auto; /* Maintain aspect ratio */
+    }
   }

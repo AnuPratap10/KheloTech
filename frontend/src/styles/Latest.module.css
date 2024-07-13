@@ -1,6 +1,39 @@
 .newscontainer {
   position: relative;
   width: 100%;
+  background-color: white;
+}
+.newsBox {
+  display: flex;
+  margin-top: 5%;
+}
+
+.newsFirstBox {
+  width: 300px;
+  height: auto;
+
+  gap: 20px;
+  margin-left: 10%;
+}
+
+.newsSecondBox {
+  display: flex;
+
+  width: fit-content;
+  gap: 20px;
+}
+.newsimage {
+  width: 100px; /* Set image size as needed */
+  height: auto;
+  margin-right: 10px;
+  display: inline;
+  margin-top: 10%;
+}
+
+.newsFirstBoxP1 {
+  margin-left: 42%;
+  display: inline;
+  margin-top: px;
 }
 
 .newsheading {
@@ -23,14 +56,6 @@
   width: 30%;
 }
 
-.newsimage {
-  width: 100px; /* Set image size as needed */
-  height: auto;
-  margin-right: 10px;
-  display: inline;
-  margin-top: 10%;
-}
-
 .newstext {
   margin-bottom: 20px;
   margin-left: 10%;
@@ -43,25 +68,27 @@
   margin-top: 20px;
 }
 
-.newsFirstBox {
-  width: 300px;
-  height: auto;
 
-  gap: 20px;
-  margin-left: 10%;
-}
-.newsFirstBoxP1 {
-  margin-left: 42%;
-  display: inline;
-  margin-top: px;
-}
-.newsSecondBox {
-  display: flex;
 
-  width: fit-content;
-  gap: 20px;
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .newsFirstBox {
+    width: 45%; /* Adjust width for medium screens */
+  }
 }
-.newsBox {
-  display: flex;
-  margin-top: 5%;
+
+@media (max-width: 768px) {
+  .newsFirstBox {
+    width: 100%; /* Stack items for smaller screens */
+    margin-left: 0; /* Remove margin */
+  }
+
+  .newsSecondBox {
+    flex-direction: column; /* Stack image and text */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .newsimage {
+    margin-bottom: 10px; /* Add space below image */
+  }
 }

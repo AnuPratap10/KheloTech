@@ -48,3 +48,38 @@
     align-items: center;
     border-radius: 50px;
   }
+
+  @media (max-width: 1024px) {
+    .moscotD1 {
+      flex-direction: column; /* Stack content on medium screens */
+      align-items: center; /* Center content */
+    }
+  
+    .moscotD2 {
+      width: 80%; /* Adjust width for smaller screens */
+      margin-left: 0; /* Center alignment */
+      text-align: center; /* Center text */
+    }
+  
+    .MoscotimageContainer {
+      margin-left: 0; /* Center image container */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .moscotD1 {
+      height: auto; /* Allow height to adjust */
+    }
+  
+    .M2Image {
+      width: 40%; /* Adjust image size for smaller screens */
+      height: auto; /* Maintain aspect ratio */
+      margin-left: 0; /* Center alignment */
+    }
+  
+    .MoscotButton {
+      margin-left: 0; /* Center button */
+      width: 100%; /* Full width for button */
+      padding: 15px; /* Increase padding for better touch target */
+    }
+  }

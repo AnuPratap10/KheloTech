@@ -33,7 +33,7 @@ const HomePage = () => {
                 <div className="menutext">Menu</div>
               </div>
               <div>
-                <img src={uttarakhandLogo} alt="Uttarakhand Logo" />
+                <img className="homeutLogo" src={uttarakhandLogo} alt="Uttarakhand Logo" />
               </div>
               <div className="navbar">
                 <div className="nav-item">
@@ -59,14 +59,17 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
+
+
             <div className="middleHeading">
               <div className="content">
                 <div className="images">
-                  <img src={seal} alt="Seal" />
-                  <img src={sport} alt="Sport" />
-                  <img src={ministry} alt="Ministry" />
-                  <img src={ind} alt="Ind" />
-                  <img src={medal} alt="Medal" />
+                  <img className="imageBaseIcon" src={seal} alt="Seal" />
+                  <img className="imageBaseIcon"src={sport} alt="Sport" />
+                  <img  className="imageBaseIcon" src={ministry} alt="Ministry" />
+                  <img className="imageBaseIcon" src={ind} alt="Ind" />
+                  <img  className="imageBaseIcon"src={medal} alt="Medal" />
+                  
                 </div>
               </div>
               <div className="days">
@@ -85,7 +88,7 @@ const HomePage = () => {
               </div>
             </div>
 
-            {/* <div className="parantText">
+            <div className="parantText">
               <div className="leftBottombox">
                 <h2>The 38th National Games, Uttarakhand 2024</h2>
                 <p>
@@ -122,7 +125,7 @@ const HomePage = () => {
                   </p>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,16 @@
-* {
-  font-family: Noto Sans;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  
+font-family:  
+Noto Sans;
+box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 .background {
   background: linear-gradient(
       178.54deg,
@@ -16,7 +26,7 @@
 }
 
 .margin80 {
-  /* border: 1px solid red; */
+ 
   margin-left: 10%;
   margin-right: 10%;
 
@@ -28,6 +38,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
 }
 
 .frame {
@@ -78,6 +89,7 @@
 .navbar {
   display: flex;
   gap: 28px;
+ 
 }
 
 .search-container {
@@ -91,6 +103,7 @@
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.7);
   color: #1c274c;
+  font-size: 14px;
 }
 
 .search-icon {
@@ -148,61 +161,67 @@
 .middleHeading {
   background: #ffffff;
   border-radius: 50px;
-  padding: 15px;
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: fit-content;
-  margin-left: 18%;
-  /* border:2px dashed green; */
-  height: auto;
+  margin-left: 17%;
+  /* border:2px solid green; */
+  height: 65px;
   margin-top: 20px;
 }
 
+
 .middleHeading .content {
   border: 1px solid black;
-  padding: 5px;
+  height: 35px;
+  /* padding: 5px; */
+  margin-left: 2%;
+  width: fit-content;
+  
 }
 
 .middleHeading .images img {
-  height: auto;
-  margin-right: 25px;
-  /* Adjust spacing between images */
+  height: 40px;
+  margin-right: 20px;
+  
+  
 }
 
 .middleHeading .days {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 .middleHeading .days .numbers {
   display: flex;
-  gap: 30px;
-  font-size: 20px; /* Adjust as needed */
+  gap: 25px;
+  font-size: 15px; /* Adjust as needed */
   font-weight: bold;
 }
 
 .middleHeading .days .labels {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   font-size: 14px; /* Adjust as needed */
 }
 /* .................. */
 .leftBottombox {
   margin: 20px;
-  width: 25%;
+  width: 26%;
   padding: 15px;
-  /* border: 1px dashed white; */
-  height: auto;
+  /* border: 1px dashed red; */
+  /* height: 500px; */
   color: white;
 }
 
 .leftBottombox h2 {
   font-family: Paris2024-Variable;
-
-  font-size: 35px; /* Adjust as needed */
+/* background-color: blue; */
+  font-size: 20px; /* Adjust as needed */
   margin-bottom: 10px; /* Spacing below heading */
 }
 
@@ -213,16 +232,14 @@
 
 .background-box {
   background-color: #ffffff; /* White background */
-  border-radius: 50px; /* 50px border radius */
-  padding: 20px; /* Padding inside the box */
-  margin-top: 20px; /* Space above the box */
+  border-radius: 40px; /* 50px border radius */
+  padding: 5px; /* Padding inside the box */
+  margin-top: 17px; /* Space above the box */
   width: fit-content;
   color: #000;
 }
 
-.background-box h2 {
-  font-size: 20px; /* Adjust as needed */
-}
+
 
 .parantText {
   display: flex;
@@ -247,164 +264,57 @@
   border: none;
 }
 
-/* latestnews............................... */
-
-.newscontainer {
-  position: relative;
-  width: 100%;
+.homeutLogo{
+  margin-left: 27%;
 }
 
-.newsheading {
-  position: absolute;
-  margin-top: 1;
-}
+  /* .................... */
 
-.newsinner-container {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 20px auto; /* Center the container */
-  margin-top: 20%;
-}
+  @media (max-width: 1024px) {
+    .parantText {
+      flex-direction: column;
+    }
+  
+    .leftBottombox,
+    .rightBottomBoxMain {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .margin80 {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    .menuline {
+      padding: 20px 0;
+    }
+  
+    .middleHeading {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+  
 
-.newsitem {
-  /* display: flex; */
-  align-items: center;
-  border: 1px solid red;
-  width: 30%;
-}
+@media (max-width: 768px) {
+  .nav-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
 
-.newsimage {
-  width: 100px; /* Set image size as needed */
-  height: auto;
-  margin-right: 10px;
-  display: inline;
-  margin-top: 10%;
-}
+  .search-container {
+    width: 100%;
+  }
 
-.newstext {
-  margin-bottom: 20px;
-  margin-left: 10%;
-  display: inline; /* Space between texts */
-  font-size: 1.2rem; /* Increase text size */
-}
-.newstext2 {
-  margin-left: 20%;
-  font-size: 1rem; /* Adjust as needed */
-  margin-top: 20px;
-}
+  .search-input {
+    width: 100%;
+  }
 
-.newsFirstBox {
-  width: 300px;
-  height: auto;
-
-  gap: 20px;
-  margin-left: 10%;
-}
-.newsFirstBoxP1 {
-  margin-left: 42%;
-  display: inline;
-  margin-top: px;
-}
-.newsSecondBox {
-  display: flex;
-
-  width: fit-content;
-  gap: 20px;
-}
-.newsBox {
-  display: flex;
-  margin-top: 5%;
-}
-
-/* Moscot Page............................. */
-
-
-/* ....sports........................................ */
-
-.sportsFirstContainer {
-  display: flex;
-  justify-content: space-between;
-}
-.sportButton {
-  height: 35px;
-  width: 100px;
-  border-radius: 50px;
-  background: linear-gradient(90deg, #bb0490 -10%, #0c2e5e 107.14%);
-  color: white;
-  padding: 2px;
-  margin-top: 20px;
-  border: none;
-}
-
-.sportDivBox {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-
-.sportDivBox1 {
-  display: flex;
-
-  gap: 25px;
-}
-
-.sportDivBox1 > div {
-  display: flex;
-  width: 200px;
-  height: 200px;
-
-  margin-bottom: 3%;
-}
-
-/* ......................follow us........................ */
-
-/* ....competation zone................. */
-
-.zoneMainContainer {
-  display: flex;
-  /* border:1px solid red; */
-}
-
-.zoneH1{
-  margin-left: 10%;
-  margin-top: 10%;
-}
-.zoneImage{
-
-  margin-left: 10%;
-  margin-top: 10%;
- 
-}
-
-.zoneMaps{
-  margin-left: 25%;
-}
-
-.zoneH1Sec{
-  padding: 1px;
-}
-
-.zoneH1Sec+p{
-  padding: 5px;
-} 
-
-.zoneColor{
-  width:500px;
-  height:200px;
-  padding: 3px;
-  /* border:1px solid blue; */
-  margin-left: 10%;
-  border-radius: 25px;
-  background: linear-gradient(180deg, #FFDF8C 65.49%, #FFFFFF 109.41%);
-
-}
-.zoneExplore{
-  margin-left: 10%;
-}
-.zoneExplore>button{
-  border-radius: 10px;
-  padding: 7px;
-border: none;
-width:100px;
+  .homeutLogo {
+    margin-left: 0;
+    max-width: 100%;
+  }
 }
