@@ -2,7 +2,9 @@ import React from "react";
 
 import styles from "../styles/Footer.module.css";
 import logo24 from "../assets/footer/Vector2024.png";
-import victor from "../assets/footer/Vector.png";
+import appstore from "../assets/footer/appstore.png";
+import googlestore from "../assets/footer/google.png";
+
 
 
 import {FaXTwitter} from "react-icons/fa6";
@@ -266,10 +268,10 @@ export const Footer = () => {
               </li>
 
               <div className={styles.appstore}>
-                {/* <img src={appstore} alt="" /> */}
+                <img src={appstore} alt="" />
               </div>
               <div className={styles.appstore}>
-                {/* <img src={googlestore} alt="" /> */}
+                <img src={googlestore} alt="" />
               </div>
             </ul>
           </div>
